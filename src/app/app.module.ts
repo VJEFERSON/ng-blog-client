@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlogModule } from './blog/BlogModule';
+import { PostListModule } from './blog/list/PostListModule';
+import { MatButtonModule, MatIconModule, MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -10,8 +13,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    BlogModule
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })
