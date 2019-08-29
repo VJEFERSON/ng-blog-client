@@ -1,23 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlogModule } from './blog/BlogModule';
-import { PostListModule } from './blog/list/PostListModule';
-import { MatButtonModule, MatIconModule, MatToolbarModule } from '@angular/material';
+import { CommonMaterialModules } from './blog/common/material/CommonMaterialModules';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
+    MatToolbarModule,
+    CommonMaterialModules,
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule,
-    MatIconModule,
-    MatToolbarModule,
-    BlogModule
+    BlogModule,
+    BrowserAnimationsModule
   ],
   exports:[],
   providers: [],
