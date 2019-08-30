@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
-import { ApiConfig } from '../../ApiConfig';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { PostDto } from './dataModel/PostDto';
 import { CreatePostDto } from './dataModel/CreatePostDto';
 import { EditPostDto } from './dataModel/EditPostDto';
+import { ApiConfig } from '../../ApiConfig';
 
 @Injectable()
 export class PostResource {

@@ -6,6 +6,8 @@ import { BlogModule } from './blog/BlogModule';
 import { CommonMaterialModules } from './blog/common/material/CommonMaterialModules';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material';
+import { LoginModule } from './login/LoginModule';
+import { AuthModule } from './common/auth/AuthModule';
 
 @NgModule({
   declarations: [
@@ -13,13 +15,15 @@ import { MatToolbarModule } from '@angular/material';
   ],
   imports: [
     MatToolbarModule,
+    AuthModule,
     CommonMaterialModules,
     BrowserModule,
     AppRoutingModule,
     BlogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LoginModule,
   ],
-  exports:[],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
