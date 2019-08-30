@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MatCardModule, MatTableModule, MatProgressBarModule, MatIconModule, MatButtonModule,
-    MatTooltipModule, MatDialogModule, MatInputModule, MatFormFieldModule } from '@angular/material';
+    MatTooltipModule, MatDialogModule, MatInputModule, MatFormFieldModule, MatSnackBarModule } from '@angular/material';
 
 @NgModule({
     imports: [
@@ -12,7 +12,8 @@ import { MatCardModule, MatTableModule, MatProgressBarModule, MatIconModule, Mat
         MatButtonModule,
         MatDialogModule,
         MatInputModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatSnackBarModule,
     ],
     exports: [
         MatCardModule,
@@ -23,7 +24,8 @@ import { MatCardModule, MatTableModule, MatProgressBarModule, MatIconModule, Mat
         MatButtonModule,
         MatDialogModule,
         MatInputModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatSnackBarModule,
     ],
     declarations: [],
     providers: [],

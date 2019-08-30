@@ -4,22 +4,22 @@
         <div class="row">    
             <div class="col-6">
                 <mat-form-field class="w-100">
-                    <input type="text" matInput [(ngModel)]="newPostModule.title" placeholder="Title" name="title" required>
+                    <input type="text" matInput [(ngModel)]="postModel.title" placeholder="Title" name="title" required>
                 </mat-form-field>
             </div>
             <div class="col-6">
                 <mat-form-field class="w-100">
-                    <input type="text" matInput [(ngModel)]="newPostModule.subTitle"placeholder="Subtitle" name="subTitle" required>
+                    <input type="text" matInput [(ngModel)]="postModel.subTitle" placeholder="Subtitle" name="subTitle" required>
                 </mat-form-field>
             </div>
             <div class="col-12">
                 <mat-form-field class="w-100">
-                    <input type="text" matInput [(ngModel)]="newPostModule.imageUrl" placeholder="Image Url" name="imageUrl" required>
+                    <input type="text" matInput [(ngModel)]="postModel.imageUrl" placeholder="Image Url" name="imageUrl" required>
                 </mat-form-field>
             </div>
             <div class="col-12">
                 <mat-form-field class="w-100">
-                    <textarea matInput name="content" [(ngModel)]="newPostModule.content" placeholder="Content" name="content" required></textarea>
+                    <textarea matInput name="content" [(ngModel)]="postModel.content" placeholder="Content" name="content" required></textarea>
                     <mat-hint>You can provid a HTML/Post text here</mat-hint>
                 </mat-form-field>
             </div> 
